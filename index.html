@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project -FE- Fall2024- ReDi School</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="baseHead">
+        <nav class="header-nav">
+            <a aria-current="page" class="lo-design" title="Home-Pictalbum" href="/">
+                <img src="./logo.svg" alt="logo" class="svg-logo" width="70">
+            </a>
+            <div class="sbe"></div>
+            
+            <form class="search-container" method="get" role="search">
+                <button id="search-button" class="search-button" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                <input type="text" id="searchBoxInput" name="searchBox" aria-activedescendant=""autocomplete="off"
+                autocapitalize="off" autocorrect="off"  placeholder="   search photos ..."
+                role="combobox"
+                >
+               
+            </form>
+            <div class="sbn"></div>
+            <a class="about">About us </a>
+            <a class="logIn" title="Login-button" href="/">Login</a>
+
+        </nav>
+       
+    </header>
+
+    <main>
+        <nav id="tabs">
+            <a href="#" data-category="all" class="tab">All photos</a>
+            <a href="#" data-category="animals" class="tab">Animals</a>
+            <a href="#" data-category="foodAndDrink" class="tab">Food & Drink</a>
+            <a href="#" data-category="landscape" class="tab">Landscape</a>
+            <a href="#" data-category="nature" class="tab">Night</a>
+            <a href="#" data-category="people" class="tab">People</a>
+            <a href="#" data-category="wallpapers" class="tab">Wallpapers</a>
+        </nav>
+        
+      <div class="photo-gallery" id="photo-gallery"></div>
+
+        
+    </main>
+
+
+
+
+    <footer>
+        <div class="fNote">&copy;Redi School- Fall semester- Frontend development</div>
+    </footer>
+    <!-- Masonry Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>

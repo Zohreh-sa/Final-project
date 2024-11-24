@@ -1,0 +1,141 @@
+/* body{
+    background-color: aqua;
+} */
+
+
+.fNote{
+    margin: 150px 50px 0 0;
+    text-align: center;
+}
+
+.baseHead {
+    display: flex;
+    flex-direction: row;
+    min-height: 40px;
+    max-height: fit-content;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+}
+
+.lo-design{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+
+.header-nav {
+    text-align: center;
+    flex-direction: row;
+    align-content: center;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+/* space between elements */
+.sbe{
+    flex-shrink: 0;
+    width: 10px;
+}
+
+.search-container{
+    flex-direction: row;
+    align-items: start;
+   
+    
+    
+}
+
+#searchBoxInput{
+    width: 8cm;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 30px;
+    border-left: hidden;
+    margin-left: -5px;
+       
+}
+
+#search-button{
+    background-color: transparent;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 35.5px;
+    border-right: hidden;
+    
+    
+  
+}
+
+/* Login button */
+.logIn {
+    padding-top: 5px;
+    color: azure;
+    font-size: 16px;
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+    border: 0;
+    background-color: rgba(132, 20, 20, 0.9);
+}
+
+nav {
+    display: flex;
+    justify-items: center;
+    gap: 20px;
+    /* space between items*/
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+#tabs{
+    margin-top: 35px;
+    flex-direction: row;
+    justify-items: center;
+    padding: 30px;
+    
+}
+
+
+.signUp{
+    
+    font-size: 18px;
+    border:0;
+    height: 30px;
+    width: 80px;
+    border-radius:10px;
+    background-color: red;
+}
+
+.photo-gallery{
+    margin:0 auto;
+    display: block;/* Fallback if Masonry fails */
+   /*  gap: 10px; */
+}
+
+.photo{
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.photo img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow:0 4px 8px rgba(0, 0 ,0,0.2)
+}
