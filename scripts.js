@@ -44,7 +44,7 @@ function renderPhotos() {
                 gallery.appendChild(photoDiv);
             });
         }
-    });
+    };
 
       // Initialize Masonry
     new Masonry(gallery, {
@@ -53,7 +53,7 @@ function renderPhotos() {
         gutter: 10,             // Space between items
         fitWidth: true          // Center the gallery
     });
-}
+
 
 function manageTabs(){
     //manage tabs click
