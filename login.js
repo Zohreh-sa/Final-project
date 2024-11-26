@@ -16,7 +16,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     event.preventDefault(); // Prevent the default form submission behavior
 
     // Get email and password values
-    const email = document.getElementById("email").value.trim();
+    const email = document.getElementById("email").value.trim(); /* remove white spaces */
     const password = document.getElementById("password").value.trim();
 
     // Validation checks
