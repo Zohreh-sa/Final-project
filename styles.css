@@ -11,27 +11,24 @@
 .baseHead {
     display: flex;
     flex-direction: row;
-    min-height: 40px;
-    max-height: fit-content;
     padding: 15px;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
-    
+      
 }
 
 .lo-design{
-    padding-top: 0;
-    margin-top: 0;
+    width:100px;
+
 }
 
 
 .header-nav {
     text-align: center;
+    align-items: center;
     flex-direction: row;
-    align-content: center;
-    margin-top: 5px;
-    padding: 10px;
+   
 }
 
 /* space between elements */
@@ -41,32 +38,39 @@
 }
 
 .search-container{
-    flex-direction: row;
-    align-items: start;
-   
-    
-    
-}
-
-#searchBoxInput{
-    width: 8cm;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    height: 30px;
-    border-left: hidden;
-    margin-left: -5px;
+    position: relative;
+    width: 700px; 
+    /* visibility: hidden; */ 
        
 }
 
-#search-button{
-    background-color: transparent;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    height: 35.5px;
-    border-right: hidden;
-    
-    
-  
+
+.search-input{
+    width: 500px;
+    padding:10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+       
+}
+
+
+.search-input:focus{
+ border-color: #007BFF;
+}
+
+.search-button{
+    top: 50%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.search-button i {
+    font-size: 18px;
+    color:#888;
 }
 
 /* Login button */
@@ -107,7 +111,7 @@ nav a:hover {
     flex-direction: row;
     justify-items: center;
     padding: 30px;
-    
+        
 }
 
 
@@ -138,4 +142,93 @@ nav a:hover {
     display: block;
     border-radius: 10px;
     box-shadow:0 4px 8px rgba(0, 0 ,0,0.2)
+}
+
+
+/* Login page  */
+
+
+.l-route{
+    display: flex;
+    flex-shrink: 0;
+    margin-inline: auto;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.sfn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    width: 300px;
+    border: 30px;
+   
+}
+.gmb {
+    padding: 32px 32px 40px;
+    display: block;
+    width: inherit;
+    
+}
+
+.l-h1{
+    margin-block: 0;
+}
+
+.log-form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 24px;
+    text-align: left;
+    gap: 24px;
+
+}
+
+.uil{
+    display: flex;
+    flex-direction: column;
+   
+   
+}
+
+.uinf{
+    display: flex;
+    flex-shrink: 0;
+    width: 350px;
+    
+   
+}
+
+.fmp{
+   font-size: 12px;
+   margin-left: 160px; 
+
+}
+
+.w800b{
+    height: 30px;
+    
+
+}
+
+.btn-login{
+    height: 40px;
+    font-size: medium;
+
+}
+
+
+
+
+@media (min-width:480px)and(max-width:767px)
+{
+    .gmb{
+        padding: 32px 32px 40px;
+    }
+
 }
