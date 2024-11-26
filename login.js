@@ -4,10 +4,13 @@
 const users = [
     {
         email: "user@gmail.com",
+        username:"user1",
         password: "123456"
     }
 ];
 
+
+const span = document.getElementById("log-alert")
 // Add an event listener for the form submission
 document.getElementById("loginForm").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent the default form submission behavior
@@ -19,24 +22,27 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     // Validation checks
     if (email === "" || password === "") {
         alert("Both email and password fields are required.");
-        return;
+        return false;
     }
 
     // Validate email format using a regular expression
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-        alert("Please enter a valid email address.");
+        span.innerHTML=("Please enter a valid email address.");
         return;
     }
 
     // Check if the user exists in the array
     const user = users.find(user => user.email === email && user.password === password);
+    
 
     if (user) {
-        alert("Login successful! Redirecting...");
+        span.innerHTML=("Login successful! Redirecting...");
         // Redirect to index.html
         window.location.href = "index.html";
     } else {
-        alert("Invalid email or password. Please try again.");
+        
+
+        span.innerHTML= ("Invalid email or password. Please try again.");
     }
 });

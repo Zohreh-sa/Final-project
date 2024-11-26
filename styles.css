@@ -73,6 +73,8 @@
     color:#888;
 }
 
+
+
 /* Login button */
 .logIn {
     padding-top: 5px;
@@ -143,6 +145,9 @@ nav a:hover {
     border-radius: 10px;
     box-shadow:0 4px 8px rgba(0, 0 ,0,0.2)
 }
+
+
+
 
 
 /* Login page  */
@@ -222,7 +227,12 @@ nav a:hover {
 
 }
 
-
+.span-box{
+    display: block;
+    height: 20px;
+    margin-top: 20px;
+    color: rgb(255,0,0);
+}
 
 
 @media (min-width:480px)and(max-width:767px)
