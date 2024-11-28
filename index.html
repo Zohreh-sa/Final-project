@@ -11,7 +11,7 @@
     <header class="baseHead">
         <nav class="header-nav">
             <a aria-current="page" class="lo-design" title="Home-Pictalbum" href="/">
-                <img src="./logo.svg" alt="logo" class="svg-logo" width="70">
+                <img src="./Images/logo.svg" alt="logo" class="svg-logo" width="70">
             </a>
             <div class="sbe"></div>
             
@@ -30,6 +30,7 @@
             <a class="contact-us" href=""> Contact us</a>
            
             <a class="logIn" title="Login-button" href="/login.html">Login</a>
+            <button class="menu-toggle" id="menuToggle">&#9776; </button>
 
 
 
@@ -39,16 +40,22 @@
 
     <main>
         <nav id="tabs">
+            <div class="sbe"></div>
+            <div class="sbe"></div>
             <a href="#" data-category="all" class="tab">All photos</a>
+            <a href="#" data-category="AI" class="tab">AI generated</a>
             <a href="#" data-category="animals" class="tab">Animals</a>
             <a href="#" data-category="foodAndDrink" class="tab">Food & Drink</a>
             <a href="#" data-category="landscape" class="tab">Landscape</a>
-            <a href="#" data-category="nature" class="tab">Night</a>
+            <a href="#" data-category="Night" class="tab">Night</a>
             <a href="#" data-category="people" class="tab">People</a>
-            <a href="#" data-category="wallpapers" class="tab">Wallpapers</a>
+            <a href="#" data-category="wallpaper" class="tab">Wallpapers</a>
+            <div class="sbe"></div>
+            <div class="sbe"></div>
         </nav>
         
       <div class="photo-gallery" id="photo-gallery"></div>
+
 
         
     </main>
@@ -57,7 +64,9 @@
 
 
     <footer>
-        <div class="fNote">&copy;Redi School- Fall semester- Frontend development</div>
+       <div id="foflex">
+            <div class="fNote">&copy;Redi School- Fall semester- Frontend development</div>
+        </div>
     </footer>
     <!-- Masonry Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>

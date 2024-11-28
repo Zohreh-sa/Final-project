@@ -16,7 +16,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     event.preventDefault(); // Prevent the default form submission behavior
 
     // Get email and password values
-    const email = document.getElementById("email").value.trim(); /* remove white spaces */
+    const email = document.getElementById("email").value.trim(); /* Trim used to remove white spaces */
     const password = document.getElementById("password").value.trim();
 
     // Validation checks
@@ -37,12 +37,17 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     
 
     if (user) {
-        span.innerHTML=("Login successful! Redirecting...");
+        alert(`Login successful! Redirecting as ${users.username}...`);
+        //save user's data in localStorage
+        localStorage.setItem("loggedInUser",JSON.stringify(user));
+
         // Redirect to index.html
         window.location.href = "index.html";
+
     } else {
         
 
         span.innerHTML= ("Invalid email or password. Please try again.");
     }
 });
+
