@@ -2,11 +2,11 @@
 
 
 const photoDatabase = [
-    ["birds.jpg", "animals",""], ["fish.jpg", "animals"], ["bird.jpg", "animals"], ["Elephant.jpg", "animals"], ["deer.jpg", "animals"], ["Tiger.jpg", "animals"], ["monkey.jpg", "animals"], ["eagle.jpg", "animals"], ["fox.jpg", "animals"], ["Polar bear.jpg", "animals"], 
+    ["birds.jpg", "Animals"], ["fish.jpg", "Animals"], ["bird.jpg", "Animals"], ["Elephant.jpg", "Animals"], ["deer.jpg", "Animals"], ["Tiger.jpg", "Animals"], ["monkey.jpg", "Animals"], ["eagle.jpg", "Animals"], ["fox.jpg", "Animals"], ["Polar bear.jpg", "Animals"], 
     ["ai-gen (1).jpg", "AI"], ["ai-gen (2).jpg", "AI"], ["ai-gen (3).jpg", "AI"], ["ai-gen (4).jpg", "AI"], ["ai-gen (5).jpg", "AI"], ["ai-gen (6).jpg", "AI"], ["ai-gen (7).jpg", "AI"], ["ai-gen (8).jpg", "AI"], ["ai-gen (9).jpg", "AI"], ["ai-gen (10).jpg", "AI"], ["f.a.d (1).jpg", "foodAndDrink"], ["f.a.d (2).jpg", "foodAndDrink"], ["f.a.d (3).jpg", "foodAndDrink"], ["f.a.d (4).jpg", "foodAndDrink"], ["f.a.d (5).jpg", "foodAndDrink"],
-    ["LS (1).jpg", "landscape"], ["LS (2).jpg", "landscape"], ["LS (3).jpg", "landscape"], ["LS (4).jpg", "landscape"], ["LS (5).jpg", "landscape"], ["LS (6).jpg", "landscape"], ["LS (7).jpg", "landscape"], ["LS (8).jpg", "landscape"],
+    ["LS (1).jpg", "Landscape"], ["LS (2).jpg", "landscape"], ["LS (3).jpg", "landscape"], ["LS (4).jpg", "landscape"], ["LS (5).jpg", "landscape"], ["LS (6).jpg", "landscape"], ["LS (7).jpg", "landscape"], ["LS (8).jpg", "landscape"],
     ["ni (1).jpg", "night"], ["ni (2).jpg", "night"], ["ni (3).jpg", "night"], ["ni (4).jpg", "night"], ["ni (5).jpg", "night"], ["ni (6).jpg", "night"], ["ni (7).jpg", "night"],
-    ["people.jpg","people"],["People (1).jpg", "people"], ["People (2).jpg", "people"], ["People (3).jpg", "people"], ["People (4).jpg", "people"], ["People (5).jpg", "people"],
+    ["people.jpg","People"],["People (1).jpg", "People"], ["People (2).jpg", "People"], ["People (3).jpg", "People"], ["People (4).jpg", "People"], ["People (5).jpg", "People"],
     ["WP (1).jpg", "wallpaper"], ["WP (2).jpg", "wallpaper"], ["WP (3).jpg", "wallpaper"], ["WP (4).jpg", "wallpaper"], ["WP (5).jpg", "wallpaper"], ["WP (6).jpg", "wallpaper"], ["WP (7).jpg", "wallpaper"], ["WP (8).jpg", "wallpaper"], ["WP (9).jpg", "wallpaper"], ["WP (10).jpg", "wallpaper"]
 ]
 
