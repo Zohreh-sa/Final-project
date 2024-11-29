@@ -3,7 +3,7 @@
 
 const photoDatabase = [
     ["birds.jpg", "animals",""], ["fish.jpg", "animals"], ["bird.jpg", "animals"], ["Elephant.jpg", "animals"], ["deer.jpg", "animals"], ["Tiger.jpg", "animals"], ["monkey.jpg", "animals"], ["eagle.jpg", "animals"], ["fox.jpg", "animals"], ["Polar bear.jpg", "animals"], 
-    ["ai-gen (1).jpg", "AI", "https://github.com/Zohreh-sa/PhotoGallery-finalProject-RediSchool/blob/main/Images/AI/ai-gen%20(1).jpg"], ["ai-gen (2).jpg", "AI","https://github.com/Zohreh-sa/PhotoGallery-finalProject-RediSchool/blob/main/Images/AI/ai-gen%20(2).jpg"], ["ai-gen (3).jpg", "AI"], ["ai-gen (4).jpg", "AI"], ["ai-gen (5).jpg", "AI"], ["ai-gen (6).jpg", "AI"], ["ai-gen (7).jpg", "AI"], ["ai-gen (8).jpg", "AI"], ["ai-gen (9).jpg", "AI"], ["ai-gen (10).jpg", "AI"], ["f.a.d (1).jpg", "foodAndDrink"], ["f.a.d (2).jpg", "foodAndDrink"], ["f.a.d (3).jpg", "foodAndDrink"], ["f.a.d (4).jpg", "foodAndDrink"], ["f.a.d (5).jpg", "foodAndDrink"],
+    ["ai-gen (1).jpg", "AI"], ["ai-gen (2).jpg", "AI"], ["ai-gen (3).jpg", "AI"], ["ai-gen (4).jpg", "AI"], ["ai-gen (5).jpg", "AI"], ["ai-gen (6).jpg", "AI"], ["ai-gen (7).jpg", "AI"], ["ai-gen (8).jpg", "AI"], ["ai-gen (9).jpg", "AI"], ["ai-gen (10).jpg", "AI"], ["f.a.d (1).jpg", "foodAndDrink"], ["f.a.d (2).jpg", "foodAndDrink"], ["f.a.d (3).jpg", "foodAndDrink"], ["f.a.d (4).jpg", "foodAndDrink"], ["f.a.d (5).jpg", "foodAndDrink"],
     ["LS (1).jpg", "landscape"], ["LS (2).jpg", "landscape"], ["LS (3).jpg", "landscape"], ["LS (4).jpg", "landscape"], ["LS (5).jpg", "landscape"], ["LS (6).jpg", "landscape"], ["LS (7).jpg", "landscape"], ["LS (8).jpg", "landscape"],
     ["ni (1).jpg", "night"], ["ni (2).jpg", "night"], ["ni (3).jpg", "night"], ["ni (4).jpg", "night"], ["ni (5).jpg", "night"], ["ni (6).jpg", "night"], ["ni (7).jpg", "night"],
     ["people.jpg","people"],["People (1).jpg", "people"], ["People (2).jpg", "people"], ["People (3).jpg", "people"], ["People (4).jpg", "people"], ["People (5).jpg", "people"],
@@ -29,9 +29,9 @@ function renderPhotos(categories) {
 
             // Create an image element
             const img = document.createElement('img');
-            img.src = `${baseFolder}${category}/${filename}`; // Construct the path dynamically
+            img.src = `${baseFolder}/${category}/${filename}`; // Construct the path dynamically
             img.alt = `${category} photo`;
-            
+            img.loading="lazy";
             
             // Append the image to the photo container
             photoDiv.appendChild(img);
