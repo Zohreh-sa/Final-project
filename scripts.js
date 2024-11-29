@@ -2,7 +2,7 @@
 
 
 const photoDatabase = [
-    ["Birds.jpg", "Animals"], ["fish.jpg", "Animals"], ["bird.jpg", "Animals"], ["Elephant.jpg", "Animals"], ["deer.jpg", "Animals"], ["Tiger.jpg", "Animals"], ["monkey.jpg", "Animals"], ["eagle.jpg", "Animals"], ["fox.jpg", "Animals"], ["Polar bear.jpg", "Animals"], 
+    ["fish.jpg", "Animals"], ["bird.jpg", "Animals"], ["Elephant.jpg", "Animals"], ["deer.jpg", "Animals"], ["Tiger.jpg", "Animals"], ["monkey.jpg", "Animals"], ["eagle.jpg", "Animals"], ["fox.jpg", "Animals"], ["Polar bear.jpg", "Animals"], 
     ["ai-gen (1).jpg", "AI"], ["ai-gen (2).jpg", "AI"], ["ai-gen (3).jpg", "AI"], ["ai-gen (4).jpg", "AI"], ["ai-gen (5).jpg", "AI"], ["ai-gen (6).jpg", "AI"], ["ai-gen (7).jpg", "AI"], ["ai-gen (8).jpg", "AI"], ["ai-gen (9).jpg", "AI"], ["ai-gen (10).jpg", "AI"], ["f.a.d (1).jpg", "foodAndDrink"], ["f.a.d (2).jpg", "foodAndDrink"], ["f.a.d (3).jpg", "foodAndDrink"], ["f.a.d (4).jpg", "foodAndDrink"], ["f.a.d (5).jpg", "foodAndDrink"],
     ["landscape1.jpg", "Landscape"], ["beachLandscape.jpg", "Landscape"], ["cityLandscape.jpg", "Landscape"], ["forestLandscape.jpg", "Landscape"], ["portLandscape.jpg", "Landscape"], ["snowyForestLandscape.jpg", "Landscape"], ["winterLandscape.jpg", "Landscape"], ["frozenLandscape.jpg", "Landscape"],
     ["night1.jpg", "Night"], ["night2.jpg", "Night"], ["night3.jpg", "Night"], ["night4.jpg", "Night"], ["night5.jpg", "Night"], ["night6.jpg", "Night"], ["night7.jpg", "Night"],
