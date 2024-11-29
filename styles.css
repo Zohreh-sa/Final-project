@@ -29,6 +29,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
+    width: 100%;
       
 }
 
@@ -39,10 +40,34 @@
 
 
 .header-nav {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
     text-align: center;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: row;
+    font-size: 16px;
+    width:fit-content
    
+}
+nav {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    /* space between items*/
+    font-size: 18px;
+    color: black;
+
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 /* space between elements */
@@ -51,20 +76,22 @@
     width: 10px;
 }
 
+.search-div{
+    width: 500px;
+}
 .search-container{
     position: relative;
-    width: 700px; 
+    width: max-content; 
     /* visibility: hidden; */ 
        
 }
 
 
 .search-input{
-    width: 500px;
+    width: 400px;
     padding:10px 15px;
     border: 2px solid #ccc;
     border-radius: 25px;
-    font-size: 16px;
     outline: none;
     transition: border-color 0.3s;
        
@@ -93,7 +120,6 @@
 .logIn {
     padding-top: 5px;
     color: azure;
-    font-size: 16px;
     border-radius: 10px;
     height: 30px;
     width: 80px;
@@ -101,25 +127,6 @@
     background-color: rgba(132, 20, 20, 0.9);
 }
 
-nav {
-    display: flex;
-    justify-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    /* space between items*/
-    font-size: 18px;
-    color: black;
-    
-}
-
-nav a {
-    color: black;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
 
 
 #tabs{
