@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const logoutButton= document.querySelector(".logout-button");
             logoutButton.addEventListener("click",()=> {
                 localStorage.removeItem("loggedInUser");
-                window.location.href="login.html";
+                window.location.href="./login.html";
             });
         }
     }
