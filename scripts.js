@@ -10,7 +10,7 @@ const photoDatabase = [
     ["WP (1).jpg", "wallpaper"], ["WP (2).jpg", "wallpaper"], ["WP (3).jpg", "wallpaper"], ["WP (4).jpg", "wallpaper"], ["WP (5).jpg", "wallpaper"], ["WP (6).jpg", "wallpaper"], ["WP (7).jpg", "wallpaper"], ["WP (8).jpg", "wallpaper"], ["WP (9).jpg", "wallpaper"], ["WP (10).jpg", "wallpaper"]
 ]
 
-const baseFolder = "/images/"; // Base folder for all categories
+const baseFolder = "./images/"; // Base folder for all categories
 const gallery = document.getElementById('photo-gallery');
 
 
