@@ -42,7 +42,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
         localStorage.setItem("loggedInUser",JSON.stringify(user));
 
         // Redirect to index.html
-        window.location.href = "index.html";
+        window.location.href = "./index.html";
 
     } else {
         
