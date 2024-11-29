@@ -79,8 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (loginLink){
             const profileElement=document.createElement("a");
             profileElement.className="profile-info";
-            profileElement.innerHTML= `<img src="./Images/profileAvatar.jpg" alt="Profile" class="Profile-icon" width="30"><br>
-            <span class="username">${loggedInUser.username}</span>
+            profileElement.innerHTML= `<img src="./Images/profileAvatar.jpg" alt="Profile" class="Profile-icon" width="30">
+            <span class="username">${loggedInUser.username}</span><br>
             <button class="logout-button">log out</button>
             `;
             loginLink.parentNode.replaceChild(profileElement, loginLink);
