@@ -37,7 +37,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     
 
     if (user) {
-        alert(`Login successful! Redirecting as ${users.username}...`);
+        
         //save user's data in localStorage
         localStorage.setItem("loggedInUser",JSON.stringify(user));
 

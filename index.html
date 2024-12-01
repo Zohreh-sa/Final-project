@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="baseHead">
-        <nav class="header-nav">
+        <div class="header-div">
             <a aria-current="page" class="lo-design" title="Home-Pictalbum" href="./index.html">
                 <img src="./Images/logo.svg" alt="logo" class="svg-logo" width="70">
             </a>
@@ -25,15 +25,17 @@
                 
                 </form>
             </div>
+            <a class="submit-image">Submit an image</a>
             
-           
-            <a calss="submit-image">Submit an image</a>
-            <a class="about-us">About us </a>
-            <a class="contact-us" href=""> Contact us</a>
-           
             <a class="logIn" title="Login-button" href="./login.html">Login</a>
-           
-        </nav>
+            <button class="toggle" title="toggle-button">&#9776;</button>
+            
+            <div class="toggle-items">
+                <a class="about-us" href="#">About us </a>
+                <a class="contact-us" href="#"> Contact us</a>
+                
+           </div>
+        </div>
        
     </header>
 
@@ -68,6 +70,7 @@
         </div>
     </footer>
     <!-- Masonry Library -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
 
     <script src="./scripts.js"></script>

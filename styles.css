@@ -22,32 +22,33 @@
     position: -ms-page bottom;
 }
 
+.lo-design {
+    width: 100px;
+
+}
+
+
+
 .baseHead {
     display: flex;
     flex-direction: row;
-    padding: 15px;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
     width: 100%;
+    padding-top: 15px;
       
 }
 
-.lo-design{
-    width:100px;
-
-}
-
-
-.header-nav {
+.header-div {
     display: flex;
     justify-items: center;
     justify-content: space-between;
     text-align: center;
-    /* align-items: center; */
+    align-items: center;
     flex-direction: row;
     font-size: 16px;
-    width:fit-content
+    width:95%;
    
 }
 nav {
@@ -56,7 +57,7 @@ nav {
     justify-content: space-between;
     gap: 20px;
     /* space between items*/
-    font-size: 18px;
+    font-size: 1em;
     color: black;
 
 }
@@ -68,6 +69,41 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+.toggle{
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+}
+.toggle:hover{
+    color: #007Baa;
+}
+.toggle-items{
+    display: none;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    position:absolute;
+    padding: 10px;
+    top: 50px;
+    right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.toggle-items.open{
+    display: flex;
+}
+
+.about-us, .contact-us{
+    display: block;
+    margin:5px 0;
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
 }
 
 /* space between elements */

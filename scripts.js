@@ -42,14 +42,14 @@ function renderPhotos(categories) {
     });
 
 
-
-    // to display gallery like Pinterest
-  
-    new Masonry(gallery, {
-        itemSelector: '.photo',  // Target photo elements
-        columnWidth: '.photo',  // Use photo width for columns
-        gutter: 10,             // Space between items
-        fitWidth: true          // Center the gallery
+// Wait for images to load before initializing Masonry
+    imagesLoaded(gallery, function () {
+        new Masonry(gallery, {
+            itemSelector: '.photo',  // Target photo elements
+            columnWidth: '.photo',  // Use photo width for columns
+            gutter: 10,             // Space between items
+            fitWidth: true          // Center the gallery
+        });
     });
 
     
@@ -98,6 +98,17 @@ document.addEventListener('DOMContentLoaded', () => {
     manageTabs(); // Set up tab click listeners
     renderPhotos(['all']); // Initial render of all categories
 });
+
+
+// Get the elements
+const toggleButton = document.querySelector('.toggle');
+const toggleItems = document.querySelector('.toggle-items');
+
+// Add event listener to toggle menu visibility
+toggleButton.addEventListener('click', () => {
+    toggleItems.classList.toggle('open');
+});
+
 
 
 
