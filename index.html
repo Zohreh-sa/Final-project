@@ -25,8 +25,9 @@
                 
                 </form>
             </div>
-            <a class="submit-image">Submit an image</a>
-            
+            <div class="subImage"> 
+                <a class="submit-image">Submit an image</a>
+            </div>
             <a class="logIn" title="Login-button" href="./login.html">Login</a>
             <button class="toggle">&#9776;</button>
             
@@ -40,21 +41,22 @@
     </header>
 
     <main>
-        <nav id="tabs">
-            <div class="sbe"></div>
-            <div class="sbe"></div>
-            <a href="#" data-category="all" class="tab">All photos</a>
-            <a href="#" data-category="AI" class="tab">AI generated</a>
-            <a href="#" data-category="Animals" class="tab">Animals</a>
-            <a href="#" data-category="foodAndDrink" class="tab">Food & Drink</a>
-            <a href="#" data-category="Landscape" class="tab">Landscape</a>
-            <a href="#" data-category="Night" class="tab">Night</a>
-            <a href="#" data-category="People" class="tab">People</a>
-            <a href="#" data-category="wallpaper" class="tab">Wallpapers</a>
-            <div class="sbe"></div>
-            <div class="sbe"></div>
-        </nav>
-        
+        <div class="catListContainer">
+            <nav id="tabs">
+                <div class="sbe"></div>
+                <div class="sbe"></div>
+                <a href="#" data-category="all" class="tab">All photos</a>
+                <a href="#" data-category="AI" class="tab">AI generated</a>
+                <a href="#" data-category="Animals" class="tab">Animals</a>
+                <a href="#" data-category="foodAndDrink" class="tab">Food & Drink</a>
+                <a href="#" data-category="Landscape" class="tab">Landscape</a>
+                <a href="#" data-category="Night" class="tab">Night</a>
+                <a href="#" data-category="People" class="tab">People</a>
+                <a href="#" data-category="wallpaper" class="tab">Wallpapers</a>
+                <div class="sbe"></div>
+                <div class="sbe"></div>
+            </nav>
+        </div>
       <div class="photo-gallery" id="photo-gallery"></div>
 
 
@@ -69,8 +71,10 @@
             <div class="fNote">&copy;Redi School- Fall semester- Frontend development</div>
         </div>
     </footer>
-    <!-- Masonry Library -->
+    
+    <!--Image loading layout  -->
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <!-- Masonry Layout -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
 
     <script src="./scripts.js"></script>

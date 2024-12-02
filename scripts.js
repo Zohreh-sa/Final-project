@@ -29,7 +29,7 @@ function renderPhotos(categories) {
 
             // Create an image element
             const img = document.createElement('img');
-            img.src = `${baseFolder}/${category}/${filename}`; // Construct the path dynamically
+            img.src = `${baseFolder}${category}/${filename}`; // Construct the path dynamically
             img.alt = `${category} photo`;
             img.loading="lazy";
             
@@ -127,14 +127,63 @@ toggleItems.addEventListener('click', (event) => {
 
 
 
-// const submitImage=document.getElementsByClassName("submit-image");
+const submitImageButton=document.querySelector(".submit-image");
 
-// submitImage.addEventListener(("click"),()=>{
-//     const createDialogBox = document.createElement("dialog");
-//     dialogBox.className = "SDialog";
-//     submitImage.appendChild(createDialogBox);
+submitImageButton.addEventListener("click",()=>{
+    const loggedInUser=JSON.parse(localStorage.getItem("loggedInUser"));
+    if (!loggedInUser){
+        window.location.href="./login.html";
+        return;
+    }
+    const dialogBox = document.createElement("dialog");
+    dialogBox.className = "SDialog";
+    document.body.appendChild(dialogBox);
+
+
+    const closeButton = document.createElement("button");
+    closeButton.className = "close-button";
+    closeButton.innerHTML = "&times;";
+    closeButton.addEventListener("click", () => dialogBox.close());
+    dialogBox.appendChild(closeButton);
+
+
+
+    const urlDiv=document.createElement("div");
+    urlDiv.className="urlDiv"
+
+    const urlInput = document.createElement("input");
+    urlInput.type = "url";
+    urlInput.placeholder = "Enter Image URL";
+    urlInput.style.width = "100%";
+    urlInput.style.height="300px"
+    urlInput.required = true;
+    urlDiv.appendChild(urlInput);
+
+
+    const imageCat=document.createElement("select");
+    const categoriesOption=["AI generated","Animals","foodAndDrink","Landscape","Night","People","Wallpaper"];
+
+    categoriesOption.forEach(cat=>{
+        const option = document.createElement("option");
+        option.value = cat.toLowerCase().replace(/ /g, "");
+        option.textContent = cat;
+        imageCat.appendChild(option);
+    })
+
+
+    const submitButton=document.createElement("button");
+    submitButton.textContent="Submit";
+    submitButton.style.marginTop="10px"
+
+
+    dialogBox.appendChild(urlDiv);
+    dialogBox.appendChild(imageCat);
+    dialogBox.appendChild(submitButton);
+
+    dialogBox.showModal();
 
     
-// })
+});
+
 
 
