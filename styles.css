@@ -351,9 +351,7 @@ nav a:hover {
 
 @media (max-width:430px)
 {
-    main{
-        max-width: 90%;
-    }
+   
     .search-container {
         display: none;
     }
@@ -364,14 +362,15 @@ nav a:hover {
     .photo-gallery {
         width: 100%;
         align-content: center;
-        
-
     }
 
     .photo {
-        width: 50%;
-     
+        width: 10em;
+        margin-bottom: 10px; 
+          
     }
+
+
     .subImage{
         font-size: 10pt;
     }
