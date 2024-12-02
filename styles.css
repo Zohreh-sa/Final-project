@@ -213,7 +213,47 @@ nav a:hover {
 
 
 
+.SDialog {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    position: relative;
+    width: 300px;
+    max-width: 100%;
+}
 
+.urlDiv {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.submit-image {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: red;
+
+
+}
+
+.close-button:hover {
+    color: #000;
+}
 
 
 
@@ -306,48 +346,6 @@ nav a:hover {
     color: rgb(255,0,0);
 }
 
-
-.SDialog {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    position: relative;
-    width: 300px;
-    max-width: 100%;
-}
-
-.urlDiv {
-   margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.submit-image {
-    cursor: pointer;
-    display: inline-block;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    color: red;
-  
-
-}
-
-.close-button:hover {
-    color: #000;
-}
 
 
 
